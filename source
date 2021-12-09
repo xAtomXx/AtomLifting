@@ -1,0 +1,348 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local AtomHubLifting = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local NiceUi = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local InfoButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local HomeButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local BetaButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local AntiKick = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local AutoButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Info = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Home = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Version = Instance.new("TextLabel")
+local Changelog = Instance.new("TextLabel")
+local Beta = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local LoadKillAllScript = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Auto = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local AutoF = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local AutoFoff = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local AutoFnoweight = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+
+--Properties:
+
+AtomHubLifting.Name = "AtomHubLifting"
+AtomHubLifting.Parent = game.CoreGui
+AtomHubLifting.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = AtomHubLifting
+Main.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.251273334, 0, 0.246753246, 0)
+Main.Size = UDim2.new(0, 586, 0, 351)
+Main.Active = true
+Main.Draggable = true
+
+UICorner.Parent = Main
+
+NiceUi.Name = "NiceUi"
+NiceUi.Parent = Main
+NiceUi.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+NiceUi.BorderSizePixel = 0
+NiceUi.Position = UDim2.new(0.00682593836, 0, 0.0142450146, 0)
+NiceUi.Size = UDim2.new(0, 579, 0, 343)
+
+UICorner_2.Parent = NiceUi
+
+Title.Name = "Title"
+Title.Parent = NiceUi
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0187713318, 0, 0.0284900293, 0)
+Title.Size = UDim2.new(0, 564, 0, 32)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Atom Hub                                                                   Lifting Simulator"
+Title.TextColor3 = Color3.fromRGB(0, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+InfoButton.Name = "InfoButton"
+InfoButton.Parent = NiceUi
+InfoButton.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+InfoButton.BorderSizePixel = 0
+InfoButton.Position = UDim2.new(0.0187713318, 0, 0.475783467, 0)
+InfoButton.Size = UDim2.new(0, 126, 0, 35)
+InfoButton.Font = Enum.Font.SourceSans
+InfoButton.Text = "Info"
+InfoButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfoButton.TextScaled = true
+InfoButton.TextSize = 14.000
+InfoButton.TextWrapped = true
+InfoButton.MouseButton1Click:connect(function()
+	Info.Visible = true
+	Auto.Visible = false
+	Beta.Visible = false
+	Home.Visible = false
+end)
+
+UICorner_3.Parent = InfoButton
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = NiceUi
+HomeButton.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+HomeButton.BorderSizePixel = 0
+HomeButton.Position = UDim2.new(0.0187713318, 0, 0.156695157, 0)
+HomeButton.Size = UDim2.new(0, 126, 0, 35)
+HomeButton.Font = Enum.Font.SourceSans
+HomeButton.Text = "Home"
+HomeButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+HomeButton.TextScaled = true
+HomeButton.TextSize = 14.000
+HomeButton.TextWrapped = true
+HomeButton.MouseButton1Click:connect(function()
+	Home.Visible = true
+	Auto.Visible = false
+	Beta.Visible = false
+	Info.Visible = false
+end)
+
+UICorner_4.Parent = HomeButton
+
+BetaButton.Name = "BetaButton"
+BetaButton.Parent = NiceUi
+BetaButton.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+BetaButton.BorderSizePixel = 0
+BetaButton.Position = UDim2.new(0.0187713318, 0, 0.623931646, 0)
+BetaButton.Size = UDim2.new(0, 126, 0, 35)
+BetaButton.Font = Enum.Font.SourceSans
+BetaButton.Text = "Beta"
+BetaButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+BetaButton.TextScaled = true
+BetaButton.TextSize = 14.000
+BetaButton.TextWrapped = true
+BetaButton.MouseButton1Click:connect(function()
+	Beta.Visible = true
+	Auto.Visible = false
+	Home.Visible = false
+	Info.Visible = false
+end)
+
+UICorner_5.Parent = BetaButton
+
+AntiKick.Name = "AntiKick"
+AntiKick.Parent = NiceUi
+AntiKick.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+AntiKick.BorderSizePixel = 0
+AntiKick.Position = UDim2.new(0.0187713318, 0, 0.772079825, 0)
+AntiKick.Size = UDim2.new(0, 126, 0, 35)
+AntiKick.Font = Enum.Font.SourceSans
+AntiKick.Text = "AntiKick"
+AntiKick.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiKick.TextScaled = true
+AntiKick.TextSize = 14.000
+AntiKick.TextWrapped = true
+AntiKick.MouseButton1Click:connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end)
+
+UICorner_6.Parent = AntiKick
+
+AutoButton.Name = "AutoButton"
+AutoButton.Parent = NiceUi
+AutoButton.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+AutoButton.BorderSizePixel = 0
+AutoButton.Position = UDim2.new(0.0187713318, 0, 0.316239297, 0)
+AutoButton.Size = UDim2.new(0, 126, 0, 35)
+AutoButton.Font = Enum.Font.SourceSans
+AutoButton.Text = "Auto"
+AutoButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoButton.TextScaled = true
+AutoButton.TextSize = 14.000
+AutoButton.TextWrapped = true
+AutoButton.MouseButton1Click:connect(function()
+	Auto.Visible = true
+	Beta.Visible = false
+	Home.Visible = false
+	Info.Visible = false
+end)
+
+UICorner_7.Parent = AutoButton
+
+Info.Name = "Info"
+Info.Parent = NiceUi
+Info.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0.266211629, 0, 0.156695157, 0)
+Info.Size = UDim2.new(0, 401, 0, 274)
+Info.Visible = false
+
+UICorner_8.Parent = Info
+
+Home.Name = "Home"
+Home.Parent = NiceUi
+Home.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.266211629, 0, 0.156695157, 0)
+Home.Size = UDim2.new(0, 401, 0, 274)
+Home.Visible = false
+
+UICorner_9.Parent = Home
+
+Version.Name = "Version"
+Version.Parent = Home
+Version.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Version.BackgroundTransparency = 1.000
+Version.BorderSizePixel = 0
+Version.Position = UDim2.new(0.027431421, 0, 0.0218978096, 0)
+Version.Size = UDim2.new(0, 141, 0, 29)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "Version: 6"
+Version.TextColor3 = Color3.fromRGB(0, 0, 0)
+Version.TextScaled = true
+Version.TextSize = 14.000
+Version.TextWrapped = true
+
+Changelog.Name = "Changelog"
+Changelog.Parent = Home
+Changelog.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Changelog.BackgroundTransparency = 1.000
+Changelog.BorderSizePixel = 0
+Changelog.Position = UDim2.new(0.027431421, 0, 0.160583943, 0)
+Changelog.Size = UDim2.new(0, 377, 0, 220)
+Changelog.Font = Enum.Font.SourceSans
+Changelog.Text = "bug fixes, added kill all, fixed AntiKick, fixed autofnoweight, changed ui"
+Changelog.TextColor3 = Color3.fromRGB(0, 0, 0)
+Changelog.TextScaled = true
+Changelog.TextSize = 14.000
+Changelog.TextWrapped = true
+
+Beta.Name = "Beta"
+Beta.Parent = NiceUi
+Beta.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+Beta.BorderSizePixel = 0
+Beta.Position = UDim2.new(0.266211629, 0, 0.156695157, 0)
+Beta.Size = UDim2.new(0, 401, 0, 274)
+Beta.Visible = false
+
+UICorner_10.Parent = Beta
+
+LoadKillAllScript.Name = "LoadKillAllScript"
+LoadKillAllScript.Parent = Beta
+LoadKillAllScript.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+LoadKillAllScript.BorderSizePixel = 0
+LoadKillAllScript.Position = UDim2.new(0.0249376558, 0, 0.0218978096, 0)
+LoadKillAllScript.Size = UDim2.new(0, 116, 0, 36)
+LoadKillAllScript.Font = Enum.Font.SourceSans
+LoadKillAllScript.Text = "LoadKillAll"
+LoadKillAllScript.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoadKillAllScript.TextScaled = true
+LoadKillAllScript.TextSize = 14.000
+LoadKillAllScript.TextWrapped = true
+LoadKillAllScript.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/xAtomXx/AtomHubLifting/main/KillFarmLoader'))()
+end)
+
+UICorner_11.Parent = LoadKillAllScript
+
+Auto.Name = "Auto"
+Auto.Parent = NiceUi
+Auto.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+Auto.BorderSizePixel = 0
+Auto.Position = UDim2.new(0.266211629, 0, 0.156695157, 0)
+Auto.Size = UDim2.new(0, 401, 0, 274)
+Auto.Visible = false
+
+UICorner_12.Parent = Auto
+
+AutoF.Name = "AutoF"
+AutoF.Parent = Auto
+AutoF.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+AutoF.BorderSizePixel = 0
+AutoF.Position = UDim2.new(0.0249376558, 0, 0.0218978096, 0)
+AutoF.Size = UDim2.new(0, 116, 0, 36)
+AutoF.Font = Enum.Font.SourceSans
+AutoF.Text = "AutoF"
+AutoF.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoF.TextScaled = true
+AutoF.TextSize = 14.000
+AutoF.TextWrapped = true
+AutoF.MouseButton1Click:connect(function()
+	_G.LULU = true--change to true or false
+	while _G.LULU do
+		wait()--change time if you want
+		if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+			game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
+		end
+	end
+end
+
+UICorner_13.Parent = AutoF
+
+AutoFoff.Name = "AutoFoff"
+AutoFoff.Parent = Auto
+AutoFoff.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+AutoFoff.BorderSizePixel = 0
+AutoFoff.Position = UDim2.new(0.354114711, 0, 0.0218978096, 0)
+AutoFoff.Size = UDim2.new(0, 116, 0, 36)
+AutoFoff.Font = Enum.Font.SourceSans
+AutoFoff.Text = "AutoFoff"
+AutoFoff.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoFoff.TextScaled = true
+AutoFoff.TextSize = 14.000
+AutoFoff.TextWrapped = true
+AutoF.MouseButton1Click:connect(function()
+	_G.LULU = false--change to true or false
+	while _G.LULU do
+		wait()--change time if you want
+		if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+			game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
+		end
+	end
+end)
+
+UICorner_14.Parent = AutoFoff
+
+AutoFnoweight.Name = "AutoFnoweight"
+AutoFnoweight.Parent = Auto
+AutoFnoweight.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+AutoFnoweight.BorderSizePixel = 0
+AutoFnoweight.Position = UDim2.new(0.683291733, 0, 0.0218978096, 0)
+AutoFnoweight.Size = UDim2.new(0, 116, 0, 36)
+AutoFnoweight.Font = Enum.Font.SourceSans
+AutoFnoweight.Text = "AutoFnoweight"
+AutoFnoweight.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoFnoweight.TextScaled = true
+AutoFnoweight.TextSize = 14.000
+AutoFnoweight.TextWrapped = true
+AutoFnoweight.MouseButton1Click:connect(function()
+	print("AutoFnoweight succes!")
+	wait(1)
+	_G.Lift = true
+
+	while _G.Lift do
+		wait(0.5)
+		local table_1 = {
+			[1] = 'GainMuscle'
+		};
+		local Target = game:GetService("ReplicatedStorage").RemoteEvent;
+		Target:FireServer(table_1);
+	end
+end)
+
+UICorner_15.Parent = AutoFnoweight
